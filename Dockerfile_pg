@@ -1,0 +1,5 @@
+FROM postgres
+RUN mkdir /var/lib/postgresql/poc_logs
+RUN cat > /var/lib/postgresql/poc_logs/poc.log
+RUN chmod 777 /var/lib/postgresql/poc_logs/poc.log
+CMD ["postgres","-c", "logging_collector=on", "-c", "log_directory=/var/lib/postgresql/poc_logs", "-c", "log_filename=poc.log", "-c", "log_statement=all"]

@@ -37,7 +37,7 @@ This will populates the database.
 For demonstrates the performance from usage of query **without "bindparam()"** you can do this: 
 
 ```
-https://localhost:5000/usuarios/normal/1
+http://localhost:5000/usuarios/normal/1
 ```
 The response wil have this format:
 
@@ -50,7 +50,7 @@ The response wil have this format:
 And for demonstrates the proformance from usage of query **with "bindparam"** you can do this:
 
 ```
-https://localhost:5000/usuarios/bind/1
+http://localhost:5000/usuarios/bind/1
 ```
 
 The response wil have this format:
